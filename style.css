@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+     width: 60%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(170deg,cadetblue, cadetblue 70% , transparent 0%);
+    gap: 0rem;
+    height: 40vh;
+    justify-items: center;
+    min-height: 40vh;
+    position: relative;
+}
+
+header img {
+    width: 30%;
+    display: inline;
+}
+
+
+.aboutme {
+    background-color: aliceblue;
+    height: 50%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.32);
+-webkit-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.32);
+    min-height: fit-content;    
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.work {
+    width: 100%;
+    padding-bottom: 1.5rem;
+      box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.32);
+-webkit-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.32);
+min-width: 60%;
+
+}
+
+.work .projectname {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.work img {
+    width: 100%;
+}
+
+i {
+    font-size: 2rem;
+}
+
+.description {
+    opacity: 50%;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.work i {
+    margin-right: 1rem;
+}
+
+#mywork {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background-color: cadetblue;
+    padding: 2rem 0;
+}
+
+footer img {
+    width: 30%;
+}
+
+footer div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+}
+
+
+@media (max-width:900px) {
+    * {
+        font-size: 0.9rem;
+    }
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .aboutme {
+        width: 50%;
+        height: 30%;
+    }
+
+    header img {
+        width: 40%;
+        float: left;
+        top: 0;
+    }
+
+      .aboutme h1 {
+        font-size: 1rem;
+    }
+
+    .aboutme p {
+        font-size: 0.6rem;
+    }
+    
+
+}
+
+
+@media (max-width:500px) {
+    * {
+        font-size: 0.8rem;
+    }
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .aboutme {
+        width: 50%;
+        height: 20%;
+    }
+
+  
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer img {
+        width: 100%;
+    }
+}
