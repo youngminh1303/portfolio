@@ -150,6 +150,13 @@ footer div {
 
 }
 
+a:visited {
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+
 
 @media (max-width:500px) {
     * {
